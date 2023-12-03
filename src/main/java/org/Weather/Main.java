@@ -1,5 +1,8 @@
 package org.Weather;
 
+
+
+
 import org.json.JSONObject;
 
 import java.io.*;
@@ -208,6 +211,7 @@ public class Main {
             }
             reader.close();
 
+
             JSONObject jsonResponse = new JSONObject(response.toString());
             return jsonResponse;
 
@@ -217,6 +221,4 @@ public class Main {
         }
         return null;
     }
-
-
 }
